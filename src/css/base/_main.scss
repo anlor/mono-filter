@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: $baseFontFamily;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+}

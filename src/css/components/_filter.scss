@@ -1,0 +1,92 @@
+// Clear to prevent layout from breaking
+// .filter-wrapper,
+// .list-wrapper {
+//     &:before {
+//         @extend %clear;
+//     }
+//     &:after {
+//         @extend %clear;
+//         clear: both;
+//     }
+// }
+
+//Color variables
+$blue: #93AAC0;
+$darkblue: #738290;
+
+
+.sort-wrapper {
+    text-align: center;
+}
+
+/* Filter styles */
+
+.left-column {
+    float: left;
+    width: 30%;
+}
+
+.filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sort-button,
+.my-trigger {
+    cursor: pointer;
+    background: $blue;
+    padding: 10px 30px;
+    border: none;
+    margin: 0 5px 7px 0;
+    color: #fff;
+    font-family: $baseFontFamily;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &.active {
+        background: $darkblue;
+    }
+}
+
+/* List items style */
+
+$gutter: 20px;
+
+.collection-wrapper {
+    width: 70%;
+    float: right;
+
+}
+
+.list-element {
+    float: left;
+    width: calc(100% / 4 - #{$gutter});
+    margin: $gutter / 2;
+
+    perspective: 700px;
+}
+
+.list-element__inner {
+    display: table;
+    width: 100%;
+    height: 200px;
+    background-color: $darkblue;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+
+    opacity: 1;
+
+    backface-visibility: hidden;
+}
+
+.inner-info {
+    display: table-cell;
+    padding: 0 10px;
+    vertical-align: middle;
+    line-height: 1.2;
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0px 1px 2px rgba(0,0,0, 0.1);
+}

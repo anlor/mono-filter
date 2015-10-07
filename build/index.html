@@ -1,0 +1,208 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8" />
+        <!-- mobile meta (hooray!) -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Humblebee Boilerplate</title>
+
+        <!-- Our Styles -->
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <!-- Icons & Favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
+        <!-- Apple touch icon (for more: http://mathiasbynens.be/notes/touch-icons) -->
+        <link rel="apple-touch-icon-precomposed" href="">
+        <!-- Safari, Chrome, Firefox, Opera -->
+        <link rel="icon" href="favicon.png">
+        <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+        <!-- or, set /favicon.ico for IE10 win -->
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="">
+
+        <script src="js/oldbrowser.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="wrapper clear">
+            <div class="left-column">
+
+                <div class="filter" data-filtertype="genre">
+                    <h4>Genre</h4>
+                    <button class="my-trigger all-btn active">ALL</button>
+                    <button class="my-trigger" data-filtervalue="action">Action</button>
+                    <button class="my-trigger" data-filtervalue="comedy">Comedy</button>
+                    <button class="my-trigger" data-filtervalue="drama">Drama</button>
+                    <button class="my-trigger" data-filtervalue="thriller">Thriller</button>
+                    <button class="my-trigger" data-filtervalue="adventure">Adventure</button>
+                    <button class="my-trigger" data-filtervalue="romantic">Romantic</button>
+                </div>
+
+
+                <div class="filter" data-filtertype="year">
+                    <h4>Year</h4>
+                    <button class="my-trigger all-btn active">ALL</button>
+                    <button class="my-trigger" data-filtervalue="2014">2014</button>
+                    <button class="my-trigger" data-filtervalue="2013">2013</button>
+                    <button class="my-trigger" data-filtervalue="2012">2012</button>
+                </div>
+
+
+                <div class="filter" data-filtertype="director">
+                    <h4>Directed By</h4>
+                    <button class="my-trigger all-btn active">ALL</button>
+                    <button class="my-trigger" data-filtervalue="Richard Linklater">RichardLinklater</button>
+                    <button class="my-trigger" data-filtervalue="Martin Scorsese">Martin Scorsese</button>
+                    <button class="my-trigger" data-filtervalue="Alejandro González Iñárritu">Alejandro González Iñárritu</button>
+                    <button class="my-trigger" data-filtervalue="Bennett Miller">Bennett Miller</button>
+                    <button class="my-trigger" data-filtervalue="Wes Anderson">Wes Anderson</button>
+                    <button class="my-trigger" data-filtervalue="Morten Tyldum">Morten Tyldum</button>
+                    <button class="my-trigger" data-filtervalue="Alfonso Cuarón">Alfonso Cuarón</button>
+                    <button class="my-trigger" data-filtervalue="David O. Russell">David O. Russell</button>
+                    <button class="my-trigger" data-filtervalue="Alexander Payne">Alexander Payne</button>
+                    <button class="my-trigger" data-filtervalue="Ang Lee">Ang Lee</button>
+                    <button class="my-trigger"data-filtervalue="Michael Haneke">Michael Haneke</button>
+                    <button class="my-trigger" data-filtervalue="Steven Spielberg">Steven Spielberg</button>
+                    <button class="my-trigger" data-filtervalue="Benh Zeitlin">Benh Zeitlin</button>
+                </div>
+            </div>
+
+
+            <div class="collection-wrapper">
+                <ul class="list-wrapper">
+                    <li class="filterobj list-element" data-director="Richard Linklater" data-genre="drama, romantic" data-name="Boyhood" data-rating="8.8" data-year="2014">
+                        <div class="list-element__inner">
+                            <div class="inner-info">
+                                Boyhood
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="filterobj list-element" data-director="David O. Russell" data-genre="drama, comedy, romantic" data-name="Du gör mig galen!" data-rating="7.9" data-year="2012">
+                        <div class="list-element__inner">
+                            <div class="inner-info">
+                                Du gör mig galen!
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="filterobj list-element" data-director="Steven Spielberg" data-genre="drama" data-name="Lincoln" data-rating="8.1" data-year="2012">
+                        <div class="list-element__inner">
+                            <div class="inner-info">
+                                Lincoln
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="filterobj list-element" data-director="Bennett Miller" data-genre="drama, action" data-name="Foxcatcher" data-rating="7.3" data-year="2012">
+                        <div class="list-element__inner">
+                            <div class="inner-info">
+                                Foxcatcher
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="filterobj list-element" data-director="Alfonso Cuarón" data-genre="drama, action" data-name="Gravity" data-rating="7.8" data-year="2013">
+                        <div class="list-element__inner">
+                            <div class="inner-info">
+                                Gravity
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="filterobj list-element" data-director="David O. Russell" data-genre="action, thriller, comedy" data-name="American Hustle" data-rating="8" data-year="2013">
+                        <div class="list-element__inner">
+                            <div class="inner-info">
+                                American Hustle
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="filterobj list-element" data-director="Michael Haneke" data-genre="drama, romantic" data-name="Amour" data-rating="8.2" data-year="2012">
+                        <div class="list-element__inner">
+                            <div class="inner-info">
+                                Amour
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="filterobj list-element" data-director="Alexander Payne" data-genre="drama, romantic, adventure" data-name="Nebraska" data-rating="7.6" data-year="2013">
+                        <div class="list-element__inner">
+                            <div class="inner-info">
+                                Nebraska
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="filterobj list-element" data-director="Wes Anderson" data-genre="comedy, adventure" data-name="The Grand Budapest Hotel" data-rating="8.4" data-year="2014">
+                        <div class="list-element__inner">
+                            <div class="inner-info">
+                                The Grand Budapest Hotel
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="filterobj list-element" data-director="Morten Tyldum" data-genre="drama, thriller" data-name="The Imitation Game" data-rating="8.2" data-year="2014">
+                        <div class="list-element__inner">
+                            <div class="inner-info">
+                                The Imitation Game
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="filterobj list-element" data-director="Martin Scorsese" data-genre="drama, comedy" data-name="The Wolf of Wall Street" data-rating="8.3" data-year="2013">
+                        <div class="list-element__inner">
+                            <div class="inner-info">
+                                The Wolf of Wall Street
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="filterobj list-element" data-director="Ang Lee" data-genre="adventure, action" data-name="Berättelsen om Pi" data-rating="7.8" data-year="2012">
+                        <div class="list-element__inner">
+                            <div class="inner-info">
+                                Berättelsen om Pi
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="filterobj list-element" data-director="Benh Zeitlin" data-genre="adventure, thriller" data-name="Beasts of the Southern Wild" data-rating="6.9" data-year="2012">
+                        <div class="list-element__inner">
+                            <div class="inner-info">
+                                Beasts of the Southern Wild
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="filterobj list-element" data-director="Alejandro González Iñárritu" data-genre="drama, comedy" data-name="Birdman" data-rating="8.4" data-year="2014">
+                        <div class="list-element__inner">
+                            <div class="inner-info">
+                                Birdman
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="outdated"></div>
+        <script src="js/build.js"></script>
+    </body>
+</html>

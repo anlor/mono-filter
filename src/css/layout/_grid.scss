@@ -1,0 +1,95 @@
+$no-col: 12;
+$gutter: 30px;
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 $gutter;
+
+  @media #{$xsmall} {
+    padding: 0 15px;
+  }
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col {
+  width: 100%;
+  float: left;
+  padding: 0 $gutter / 2;
+
+  @media #{$xsmall} {
+    padding: 0 7.5px;
+  }
+
+  @for $i from 1 through $no-col {
+
+    &--#{$i} {
+      width: calc((100% / #{$no-col}) * #{$i});
+    }
+
+    &--offset-#{$i} {
+      margin-left: calc((100% / #{$no-col}) * #{$i});
+    }
+
+    &--offset-0 {
+      margin-left: 0;
+    }
+
+  }
+
+  @media #{$medium} {
+    @for $i from 1 through $no-col {
+      &--md-#{$i} {
+        width: calc(((100% / #{$no-col}) * #{$i}));
+      }
+
+      &--md-offset-#{$i} {
+        margin-left: calc((100% / #{$no-col}) * #{$i});
+      }
+
+      &--md-offset-0 {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media #{$small} {
+    @for $i from 1 through $no-col {
+      &--sm-#{$i} {
+        width: calc(((100% / #{$no-col}) * #{$i}));
+      }
+
+      &--sm-offset-#{$i} {
+        margin-left: calc((100% / #{$no-col}) * #{$i});
+      }
+
+      &--sm-offset-0 {
+        margin-left: 0;
+      }
+
+    }
+  }
+
+  @media #{$xsmall} {
+    @for $i from 1 through $no-col {
+      &--xs-#{$i} {
+        width: calc(((100% / #{$no-col}) * #{$i}));
+      }
+
+      &--xs-offset-#{$i} {
+        margin-left: calc((100% / #{$no-col}) * #{$i});
+      }
+
+      &--xs-offset-0 {
+        margin-left: 0;
+      }
+
+    }
+  }
+}
+
